@@ -18,6 +18,9 @@ root.resizable(False,False)
 image_icon = PhotoImage(file="images/logo.png")
 root.iconphoto(False,image_icon)
 
+Round_box = PhotoImage(file="images/Rounded+Rectangle+1.png")
+Label(root,image=Round_box,bg='#57adff').place(x=30,y=110)
+
 mainloop()
 
 
