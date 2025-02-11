@@ -51,6 +51,9 @@ textfield = Entry(root,justify='center',width=15,font=("popins",25,'bold'),bg="#
 textfield.place(x=370,y=130)
 textfield.focus()
 
+Search_icon = PhotoImage(file="images/Layer+6.png")
+myimage_icon = Button(image=Search_icon,borderwidth=0,cursor='hand2',bg='#203243')
+myimage_icon.place(x=645,y=125)
 
 mainloop()
 
