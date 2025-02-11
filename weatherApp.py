@@ -69,6 +69,9 @@ Label(frame,image=secondbox,bg="#212120").place(x=600,y=30)
 Label(frame,image=secondbox,bg="#212120").place(x=700,y=30)
 Label(frame,image=secondbox,bg="#212120").place(x=800,y=30)
 
+# Clock (We will display time here)
+clock = Label(root,font=("Helvetica",30,'bold'),fg='white',bg="#57adff")
+clock.place(x=700,y=20)
 
 mainloop()
 
