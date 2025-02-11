@@ -42,6 +42,13 @@ Search_image = PhotoImage(file="images/Rounded+Rectangle+3.png")
 myimage = Label(image=Search_image,bg="#57adff")
 myimage.place(x=270,y=120)
 
+weat_image = PhotoImage(file="images/Layer+7.png")
+myimage = Label(root,image=weat_image,bg="#203243")
+myimage.place(x=290,y=127)
+
+
+
+
 mainloop()
 
 
