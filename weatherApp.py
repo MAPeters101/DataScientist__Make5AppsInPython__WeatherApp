@@ -14,6 +14,15 @@ root.geometry("890x470+300+300")
 root.configure(bg="#57adff")
 root.resizable(False,False)
 
+def getWeather():
+    city = textfield.get()
+    geolocator = Nominatim(user_agent="geoapiExercises")
+    location = geolocator.geocode(city)
+
+    obj = TimezoneFinder()
+    result = obj.timezone_at(lng=location.longitude,lat=location.latitude)
+    timezone.config(text=result)
+
 #Icon
 image_icon = PhotoImage(file="images/logo.png")
 root.iconphoto(False,image_icon)
@@ -52,7 +61,7 @@ textfield.place(x=370,y=130)
 textfield.focus()
 
 Search_icon = PhotoImage(file="images/Layer+6.png")
-myimage_icon = Button(image=Search_icon,borderwidth=0,cursor='hand2',bg='#203243')
+myimage_icon = Button(image=Search_icon,borderwidth=0,cursor='hand2',bg='#203243',command=getWeather)
 myimage_icon.place(x=645,y=125)
 
 # Bottom boxes
