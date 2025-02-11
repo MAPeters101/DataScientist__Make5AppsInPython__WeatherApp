@@ -49,6 +49,7 @@ myimage.place(x=290,y=127)
 textfield = Entry(root,justify='center',width=15,font=("popins",25,'bold'),bg="#203243",
                   border=0,fg='white')
 textfield.place(x=370,y=130)
+textfield.focus()
 
 
 mainloop()
