@@ -37,6 +37,11 @@ label4.place(x=50,y=180)
 label5 = Label(root,text="Description",font=("Helvetica",11),fg="white",bg='#203243')
 label5.place(x=50,y=200)
 
+# Search box
+Search_image = PhotoImage(file="images/Rounded+Rectangle+3.png")
+myimage = Label(image=Search_image,bg="#57adff")
+myimage.place(x=270,y=120)
+
 mainloop()
 
 
