@@ -77,6 +77,10 @@ clock.place(x=700,y=20)
 timezone = Label(root,font=("Helvetica",20),fg='white',bg="#57adff")
 timezone.place(x=700,y=20)
 
+long_lat = Label(root,font=("Helvetica",20),fg='white',bg="#57adff")
+long_lat.place(x=700,y=50)
+
+
 
 mainloop()
 
