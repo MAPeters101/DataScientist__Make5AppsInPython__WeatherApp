@@ -55,6 +55,21 @@ Search_icon = PhotoImage(file="images/Layer+6.png")
 myimage_icon = Button(image=Search_icon,borderwidth=0,cursor='hand2',bg='#203243')
 myimage_icon.place(x=645,y=125)
 
+# Bottom boxes
+frame = Frame(root,width=900,height=180,bg="#212120")
+frame.pack(side=BOTTOM)
+firstbox = PhotoImage(file="images/Rounded+Rectangle+2.png")
+secondbox = PhotoImage(file="images/Rounded+Rectangle+2+copy.png")
+
+Label(frame,image=firstbox,bg="#212120").place(x=30,y=20)
+Label(frame,image=secondbox,bg="#212120").place(x=300,y=30)
+Label(frame,image=secondbox,bg="#212120").place(x=400,y=30)
+Label(frame,image=secondbox,bg="#212120").place(x=500,y=30)
+Label(frame,image=secondbox,bg="#212120").place(x=600,y=30)
+Label(frame,image=secondbox,bg="#212120").place(x=700,y=30)
+Label(frame,image=secondbox,bg="#212120").place(x=800,y=30)
+
+
 mainloop()
 
 
